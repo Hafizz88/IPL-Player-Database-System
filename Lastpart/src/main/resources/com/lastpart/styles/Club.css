@@ -1,0 +1,120 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #006666, #004d4d);
+    -fx-padding: 20px;
+}
+
+#playerNameLabel {
+    -fx-font-family: "Impact";
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 3, 0.7, 1, 1);
+}
+
+#playerPositionLabel {
+    -fx-font-family: "Stencil Std";
+    -fx-font-size: 13pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f0f0f0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 0.5, 1, 1);
+}
+
+.separator *.line {
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 2, 0.5, 0, 1);
+}
+
+#playerDetailsButton {
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to bottom, #009933, #007722);
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.6, 0, 1);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+#playerDetailsButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #00cc44, #009933);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0.8, 0, 2);
+}
+
+#playerSellButton {
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to bottom, #d9534f, #c9302c);
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.6, 0, 1);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+#playerSellButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #f04b56, #d9534f);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0.8, 0, 2);
+}
+
+#playerPriceLabel {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 2, 0.5, 0, 1);
+}
+
+/* IPL Teams */
+.ChennaiSuperKings {
+    -fx-background-color: linear-gradient(to bottom, #ffeb3b, #fbc02d);
+    -fx-text-fill: black;
+}
+
+.MumbaiIndians {
+    -fx-background-color: linear-gradient(to bottom, #0061a8, #003d73);
+    -fx-text-fill: white;
+}
+
+.RoyalChallengersBangalore {
+    -fx-background-color: linear-gradient(to bottom, #ff4f5b, #c33f4d);
+    -fx-text-fill: white;
+}
+
+.KolkataKnightRiders {
+    -fx-background-color: linear-gradient(to bottom, #9b4f96, #74286d);
+    -fx-text-fill: white;
+}
+
+.SunrisersHyderabad {
+    -fx-background-color: linear-gradient(to bottom, #ff7f56, #f56a30);
+    -fx-text-fill: white;
+}
+
+.DelhiCapitals {
+    -fx-background-color: linear-gradient(to bottom, #0066cc, #004b99);
+    -fx-text-fill: white;
+}
+
+.RajasthanRoyals {
+    -fx-background-color: linear-gradient(to bottom, #ff66b2, #f21890);
+    -fx-text-fill: white;
+}
+
+.LucknowSuperGiants {
+    -fx-background-color: linear-gradient(to bottom, #1cc8c8, #009999);
+    -fx-text-fill: white;
+}
+
+.GujaratTitans {
+    -fx-background-color: linear-gradient(to bottom, #2e4053, #1a2b3a);
+    -fx-text-fill: white;
+}
+
+.PunjabKings {
+    -fx-background-color: linear-gradient(to bottom, #ff4f5b, #e10b28);
+    -fx-text-fill: white;
+}
+

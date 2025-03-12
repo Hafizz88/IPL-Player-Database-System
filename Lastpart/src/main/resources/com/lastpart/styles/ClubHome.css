@@ -1,0 +1,171 @@
+.window {
+    -fx-background-color: linear-gradient(to bottom, #333333, #292929);
+}
+
+.clubName {
+    -fx-font-family: "Impact";
+    -fx-font-size: 42pt;
+    -fx-text-fill: linear-gradient(to bottom, #ffcc00, #e6b800);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0.7, 1, 1);
+}
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-radius: 30;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14pt;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+#searchPlayerNameTextField {
+    -fx-background-radius: 100;
+    -fx-background-color: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+    -fx-text-fill: black;
+    -fx-padding: 8px;
+}
+
+#searchPlayerNameButton, #applyFiltersButton {
+    -fx-background-color: linear-gradient(to bottom, #008000, #005c00);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#searchPlayerNameButton:hover, #applyFiltersButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #00b300, #008000);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.7, 0, 2);
+}
+
+#resetPlayerNameButton, #resetFiltersButton {
+    -fx-background-color: linear-gradient(to bottom, #ff6600, #cc5200);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#resetPlayerNameButton:hover, #resetFiltersButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff8533, #ff6600);
+}
+
+#leftVBox {
+    -fx-background-color: linear-gradient(to bottom, #00334d, #002233);
+}
+
+#topBarHBox {
+    -fx-background-color: linear-gradient(to bottom, #800000, #660000);
+}
+
+#bottomBarHBox {
+    -fx-background-color: linear-gradient(to bottom, #004d66, #00334d);
+}
+
+#playerListVBox, #playerListHBox, #playerListVBox2 {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #4d4d4d;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10;
+}
+
+#rightVBox {
+    -fx-background-color: linear-gradient(to bottom, #004d66, #00334d);
+}
+
+#countryLabel, #positionLabel, #ageLabel, #heightLabel, #salaryLabel {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 13pt;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: #2d2d2d;
+    -fx-border-radius: 10;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #2d2d2d;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to right, #cccccc, #999999);
+    -fx-background-radius: 8;
+}
+
+.tree-view, .tree-cell {
+    -fx-background-color: linear-gradient(to bottom, #4da6ff, #1a75ff);
+    -fx-text-fill: white;
+}
+
+.tree-cell:selected {
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to bottom, #0033cc, #002699);
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+    -fx-background-color: gray;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #00264d;
+}
+
+.context-menu {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 8;
+    -fx-padding: 8px;
+}
+
+.text-field {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8px;
+}
+
+#buyPlayerButton {
+    -fx-background-color: linear-gradient(to bottom, #004c1a, #003d14);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#buyPlayerButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #006622, #004c1a);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.7, 0, 2);
+}
+
+/* Context menu for choice-box */
+.choice-box .context-menu {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 5;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #003d99;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+
+.choice-box {
+    -fx-background-color: linear-gradient(to bottom, #292929, #1f1f1f);
+    -fx-mark-color: #1a75ff;
+    -fx-text-fill: white;
+}
+
+.choice-box > .label {
+    -fx-text-fill: #bfbfbf;
+}
+

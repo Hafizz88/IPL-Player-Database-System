@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" styleClass="window"
+            stylesheets="@../styles/ClubHome.css"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.lastpart.lastpart.ClubHomeController">
+
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0"
+                    AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+
+            <!-- Left Sidebar for Club Logo & Name -->
+            <left>
+                <VBox fx:id="leftVBox" alignment="CENTER"
+                      prefHeight="600.0" prefWidth="334.0" spacing="20.0">
+                    <children>
+                        <ImageView fx:id="clubLogoImage" fitWidth="200.0"
+                                   pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="clubNameFirstLine" alignment="CENTER"
+                               styleClass="clubName" text="Club Name" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="clubNameSecondLine" alignment="CENTER"
+                               styleClass="clubName" text="Club Subtitle" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Add Buy Player Button -->
+                        <Button fx:id="buyPlayerButton" text="Buy Player" onAction="#buyPlayerAction" prefHeight="36.0" prefWidth="120.0" />
+                        <ListView fx:id="transferPlayerListView" onMouseClicked="#handlePlayerSelection" />
+
+                    </children>
+                </VBox>
+            </left>
+
+
+            <center>
+                <VBox fx:id="bodyVBox" prefHeight="600.0" prefWidth="766.0" spacing="10.0">
+                    <children>
+                        <!-- Existing Player Search and List -->
+                        <HBox fx:id="topBarHBox" alignment="CENTER" prefHeight="100.0" prefWidth="766.0" spacing="20.0">
+                            <children>
+                                <TextField fx:id="searchPlayerNameTextField"
+                                           onAction="#searchPlayerByName"
+                                           prefWidth="200.0" promptText="Type Player's Name...">
+                                    <font><Font size="18.0" /></font>
+                                </TextField>
+                                <Button fx:id="searchPlayerNameButton" mnemonicParsing="false"
+                                        onAction="#searchPlayerByName" text="Search">
+                                    <font><Font size="14.0" /></font>
+                                </Button>
+                                <Button fx:id="resetPlayerNameButton" mnemonicParsing="false"
+                                        onAction="#resetPlayerNameTextField" text="Clear">
+                                    <font><Font size="14.0" /></font>
+                                </Button>
+                            </children>
+                        </HBox>
+
+                        <!-- Scrollable Player List -->
+                        <ScrollPane fitToWidth="true" fitToHeight="true" prefHeight="400.0" prefWidth="766.0">
+                            <content>
+                                <VBox fx:id="playerListVBox" spacing="10.0" />
+                            </content>
+                        </ScrollPane>
+
+                        <!-- Dropdown Menu Below Player List -->
+                        <HBox fx:id="menuHBox" alignment="CENTER" prefHeight="50.0" prefWidth="766.0" spacing="20.0">
+                            <children>
+                                <!-- Menu Button -->
+                                <MenuButton fx:id="clubMenuButton" text="Options">
+                                    <items>
+                                        <MenuItem fx:id="maxAgeMenuItem" text="Maximum Age" onAction="#listMaxAgePlayers"/>
+                                        <MenuItem fx:id="maxHeightMenuItem" text="Maximum Height" onAction="#listMaxHeightPlayers"/>
+                                        <MenuItem fx:id="maxSalaryMenuItem" text="Maximum Salary" onAction="#listMaxSalaryPlayers"/>
+                                        <MenuItem fx:id="totalYearlySalaryMenuItem" text="Total Yearly Salary" onAction="#showTotalYearlySalary"/>
+                                        <MenuItem fx:id="logoutMenuItem" text="Sign out" onAction="#logoutClub"/>
+                                    </items>
+                                </MenuButton>
+                                <!-- Add Player Button below the player list -->
+                                <Button fx:id="addPlayerButton" text="Add Player" onAction="#addPlayerAction" prefHeight="36.0" prefWidth="120.0" />
+
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </center>
+
+            <!-- Right Filters Section -->
+            <!-- Right Filters Section -->
+            <right>
+                <VBox fx:id="rightVBox" alignment="TOP_CENTER" prefHeight="400.0" prefWidth="266.0" spacing="10.0">
+                    <children>
+                        <!-- Country Filter -->
+                        <Label text="Country:" />
+                        <TreeView fx:id="filterTreeCountry" prefHeight="100.0" prefWidth="246.0" />
+
+                        <!-- Position Filter -->
+                        <Label text="Position:" />
+                        <TreeView fx:id="filterTreePosition" prefHeight="100.0" prefWidth="246.0" />
+
+                        <!-- Age Filter -->
+                        <Label text="Age:" />
+                        <TextField fx:id="ageFromTextField" promptText="From (years)" />
+                        <TextField fx:id="ageToTextField" promptText="To (years)" />
+
+                        <!-- Height Filter -->
+                        <Label text="Height:" />
+                        <TextField fx:id="heightFromTextField" promptText="From (meters)" />
+                        <TextField fx:id="heightToTextField" promptText="To (meters)" />
+
+                        <!-- Salary Filter -->
+                        <Label text="Salary:" />
+                        <TextField fx:id="salaryFromTextField" promptText="From (USD)" />
+                        <TextField fx:id="salaryToTextField" promptText="To (USD)" />
+
+                        <!-- Apply Filters and Reset Filters Buttons -->
+                        <Button text="Apply Filters" onAction="#applyFilters"/>
+                        <Button text="Reset Filters" onAction="#resetFilters"/>
+
+                    </children>
+                </VBox>
+            </right>
+
+        </BorderPane>
+    </children>
+</AnchorPane>

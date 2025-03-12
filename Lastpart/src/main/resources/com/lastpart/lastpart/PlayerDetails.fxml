@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="239.0" prefWidth="588.0" styleClass="root" stylesheets="@../styles/Player.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lastpart.lastpart.PlayerDetailsController">
+    <children>
+        <ImageView fx:id="playerImage" fitHeight="150.0" fitWidth="120.0" layoutX="450.0" layoutY="20.0" preserveRatio="true" />
+        <Label fx:id="playerNameLabel" layoutX="20.0" layoutY="20.0" text="Player Name" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+        <Label fx:id="playerPositionLabel" layoutX="20.0" layoutY="60.0" text="Position: " />
+        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="100.0" spacing="10.0">
+            <children>
+                <Label fx:id="playerClubLabel" text="Club: Mumbai Indians" />
+                <Separator orientation="VERTICAL" prefHeight="25.0" />
+                <Label fx:id="playerCountryLabel" text="Country: India" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="140.0" spacing="10.0">
+            <children>
+                <Label fx:id="playerAgeLabel" text="Age: 28" />
+                <Separator orientation="VERTICAL" prefHeight="25.0" />
+                <Label fx:id="playerHeightLabel" text="Height: 1.75m" />
+            </children>
+        </HBox>
+        <Label fx:id="playerSalaryLabel" layoutX="20.0" layoutY="180.0" text="Weekly Salary: $190,000" />
+        <Label fx:id="playerNumberLabel" layoutX="450.0" layoutY="180.0" text="Number: 10" />
+    </children>
+</AnchorPane>

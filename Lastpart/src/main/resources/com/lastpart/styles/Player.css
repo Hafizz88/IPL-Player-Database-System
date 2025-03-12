@@ -1,0 +1,42 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #004d40, #002d2a);
+    -fx-padding: 20px;
+}
+
+.label {
+    -fx-text-fill: #e0f7fa;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-effect: dropshadow(gaussian, rgba(0, 77, 64, 0.8), 2, 0.5, 0, 1);
+}
+
+#playerNameLabel {
+    -fx-font-family: "Rockwell";
+    -fx-font-size: 20px;
+    -fx-text-fill: #00e676;
+    -fx-effect: dropshadow(gaussian, rgba(0, 230, 118, 0.7), 4, 0.8, 0, 1);
+}
+
+#countryLabel {
+    -fx-font-family: "Cambria";
+    -fx-font-size: 18px;
+    -fx-text-fill: #40c4ff;
+    -fx-effect: dropshadow(gaussian, rgba(64, 196, 255, 0.7), 3, 0.6, 0, 1);
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #00796b, #004d40);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Verdana";
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #004d40;
+    -fx-border-width: 1px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #48a999, #00695c);
+    -fx-border-color: #e0f7fa;
+}

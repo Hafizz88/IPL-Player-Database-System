@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lastpart.lastpart.AddPlayerFormController">
+    <children>
+        <Label text="Enter Player Details" layoutX="90.0" layoutY="20.0" />
+
+        <!-- Player Name -->
+        <TextField fx:id="playerNameField" promptText="Player Name" layoutX="50.0" layoutY="50.0" />
+
+        <!-- Player Position -->
+        <TextField fx:id="playerPositionField" promptText="Player Position" layoutX="50.0" layoutY="90.0" />
+
+        <!-- Player Price -->
+        <TextField fx:id="playerPriceField" promptText="Price (USD)" layoutX="50.0" layoutY="130.0" />
+
+        <!-- Player Country -->
+        <TextField fx:id="playerCountryField" promptText="Country" layoutX="50.0" layoutY="170.0" />
+
+        <!-- Player Height -->
+        <TextField fx:id="playerHeightField" promptText="Height (meters)" layoutX="50.0" layoutY="210.0" />
+
+        <!-- Player Age -->
+        <TextField fx:id="playerAgeField" promptText="Age (years)" layoutX="50.0" layoutY="250.0" />
+
+        <!-- Save Button -->
+        <Button fx:id="saveButton" text="Save" onAction="#savePlayer" layoutX="50.0" layoutY="290.0" />
+
+        <!-- Cancel Button -->
+        <Button fx:id="cancelButton" text="Cancel" onAction="#cancel" layoutX="150.0" layoutY="290.0" />
+    </children>
+</AnchorPane>

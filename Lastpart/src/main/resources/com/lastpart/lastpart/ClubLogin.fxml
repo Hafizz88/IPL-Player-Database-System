@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="root" stylesheets="@../styles/LoginWindow.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lastpart.lastpart.LoginController">
+    <children>
+        <!-- Centered Content -->
+        <VBox alignment="CENTER" spacing="20" layoutX="50.0" layoutY="20.0" prefWidth="500.0" prefHeight="460.0">
+            <children>
+                <!-- Title Section -->
+                <VBox alignment="CENTER" spacing="5">
+                    <children>
+                        <Label fx:id="titleLabelFirstLine" styleClass="title" text="IPL PLAYER" />
+                        <Label fx:id="TitleLabelSecondLine" styleClass="title" text="DATABASE SYSTEM" />
+                    </children>
+                </VBox>
+
+                <!-- Form Section -->
+                <VBox alignment="CENTER" spacing="15">
+                    <children>
+                        <GridPane hgap="10" vgap="10" alignment="CENTER">
+                            <children>
+                                <Label text="Username:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                                <ChoiceBox fx:id="usernameChoiceBox" prefWidth="200.0" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+                                <Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                                <PasswordField fx:id="passwordTextField" promptText="Password" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+
+                <!-- Button Section -->
+                <HBox alignment="CENTER" spacing="20">
+                    <children>
+                        <Button fx:id="loginButton" text="Sign in" onAction="#login" />
+                        <Button fx:id="resetButton" text="Reset" onAction="#reset" />
+                    </children>
+                </HBox>
+
+                <!-- Registration Section -->
+                <HBox alignment="CENTER" spacing="5">
+                    <children>
+                        <Label text="Not registered yet?" styleClass="label" />
+                        <Button fx:id="registerButton" text="Sign up" onAction="#register" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
+
